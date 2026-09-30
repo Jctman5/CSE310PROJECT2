@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://oxm1e5s55mep"]
+
+[ext_resource type="Script" uid="uid://b07e50iliivrj" path="res://FloorGenerator.cs" id="1_hx355"]
+[ext_resource type="PackedScene" uid="uid://c0aqm7eynowvd" path="res://room_1.tscn" id="3_m0d83"]
+
+[node name="FloorGenerator" type="Node2D" unique_id=95276750]
+script = ExtResource("1_hx355")
+StartRoom = ExtResource("3_m0d83")
+RoomScenes = Array[PackedScene]([ExtResource("3_m0d83")])
+RoomCount = 6
+RoomSize = Vector2(606, 341)

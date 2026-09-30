@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://m74h4ggrrt3i"]
+
+[ext_resource type="PackedScene" uid="uid://c37u864bh7t03" path="res://character_body_2d.tscn" id="1_37kl0"]
+[ext_resource type="PackedScene" uid="uid://oxm1e5s55mep" path="res://floor_generator.tscn" id="3_6uqi0"]
+
+[node name="Node2D" type="Node2D" unique_id=1949374595]
+
+[node name="FloorGenerator" parent="." unique_id=95276750 instance=ExtResource("3_6uqi0")]
+
+[node name="Player" parent="." unique_id=584893052 instance=ExtResource("1_37kl0")]
+position = Vector2(35, -29)

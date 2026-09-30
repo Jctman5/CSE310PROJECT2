@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c37u864bh7t03"]
+
+[ext_resource type="Script" uid="uid://dti5dme3cxdn3" path="res://CharacterBody2d.cs" id="1_f50pn"]
+[ext_resource type="PackedScene" uid="uid://drkderig5u1b7" path="res://projectile.tscn" id="2_ij6vw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aiqvd"]
+radius = 11.045361
+
+[sub_resource type="SphereMesh" id="SphereMesh_ij6vw"]
+
+[node name="Player" type="CharacterBody2D" unique_id=584893052]
+collision_layer = 2
+script = ExtResource("1_f50pn")
+ProjectileScene = ExtResource("2_ij6vw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=270796082]
+shape = SubResource("CircleShape2D_aiqvd")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=117295441]
+scale = Vector2(19.51701, 20.601295)
+mesh = SubResource("SphereMesh_ij6vw")
